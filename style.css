@@ -1,0 +1,337 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* IGNORE ABOVE CODE */
+*{
+    font-family: 'Inter',sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter',sans-serif;
+    overflow: scroll;
+}
+
+.main-nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px auto;
+    border-bottom:1px solid #F2F2F2;
+}
+
+.main-nav > div{
+    width: calc(100%/3);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.left-main-nav{
+    justify-content: flex-start;
+}
+
+.left-main-nav > button{
+    font-family: 'Inter',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
+    border: none;
+    line-height: 20px;
+    padding: 0px 13px;
+    display: flex;
+    align-items: center;
+}
+
+.left-main-nav > button:first-child{
+    padding-left: 10px;
+}
+
+.search-container{
+    justify-content: center;
+    align-items: center;
+}
+.search-box{
+    width: 42%;
+    height: auto;
+    padding: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+    color: rgb(107, 107, 107);
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.search-text{
+    margin-left: 5px;
+}
+
+.right-main-nav{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-main-nav > svg,div{
+    margin: auto 10px;
+    display: flex;
+    flex-direction: row;
+}
+.invite-box{
+    color: white;
+    background-color: #0265D2;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.invite-box > svg,p{
+    margin: auto 2px;
+}
+
+.upgrade-box{
+    background-color: #F2F2F2;
+    padding: 8px 10px;
+    font-size: 12px;
+    color: rgb(107, 107, 107);
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.upgrade-arrow{
+    margin: 0px 0px 0px 2px;
+}
+
+main{
+    width: 100% !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.side-nav{
+    width: 20%;
+    height: 94vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #F9F9F9;
+    border-right: 1px solid #EDEDED;
+}
+
+.main-container{
+    width: 80%;
+    height: 94vh;
+    background-color: aqua;
+}
+
+.workspace{
+    width: 100%;
+    height: auto;
+    margin:10px  0px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:1px solid #F0F0F0;
+}
+.workspace-desig{
+    width: 30%;
+    height: auto;
+}
+.workspace-text{
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+.workspace-buttons > button{
+    border: none;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: 'Inter';
+    margin-left: 4px;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+
+.inner-side-nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0px;
+}
+
+.side-nav-item-list{
+    width: 24%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 10px;
+    text-align: center;
+    margin: 5px 0px 500px 0px;
+    border-right:1px solid #F0F0F0 ;
+}
+
+.side-nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin: 0px;
+}
+.side-nav-item > svg,p{
+    margin: 3px 0px;
+}
+
+.side-nav-item:first-child{
+    background-color: #EDEDED;
+    border-left: 2px solid #FF6C37;
+}
+
+.collection-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.collection-row{
+    width: 95%;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.collection-row > input{
+    width: 90%;
+    background-color: transparent;
+    border: 1px solid #EDEDED;
+    border-radius: 2px;
+    margin: 0px 5px;
+}
+
+.collection-row2{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.collection-row2 > p{
+    margin-left: 10px;
+}
+
+.main-container{
+    background-color: white !important;
+}
+
+.action-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#url-input,#key,#value{
+    width: 90%;
+    height: 30px;
+    background-color: #EDEDED;
+    border:none;
+    border-radius: 3px;
+    text-indent: 15px;
+}
+#key,#value{
+    width: 20%;
+    margin-right:5px ;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #EDEDED;
+}
+
+#fetch-api{
+    width: 6%;
+    height: 36px;
+    margin-left: 10px;
+    background-color: #0265D2;
+    color: white;
+    border:none;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.display-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-top: 1px solid #EDEDED;
+}
+.display-text{
+    margin: 15px 0px;
+    font-weight: 600;
+}
