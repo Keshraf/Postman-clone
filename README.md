@@ -1,5 +1,5 @@
 # Postman-clone
-Beginner Submission of Open Source Challenge - SlingShot
+Submission of Open Source Challenge - SlingShot
 
 ## Tech Stack:
 1. HTML
